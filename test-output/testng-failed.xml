@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="PlayWright_Jul_2025(failed)">
+    <classes>
+      <class name="testcases.HomePageTest">
+        <methods>
+          <include name="searchItem" invocation-numbers="2"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testcases.HomePageTest -->
+    </classes>
+  </test> <!-- PlayWright_Jul_2025(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->
