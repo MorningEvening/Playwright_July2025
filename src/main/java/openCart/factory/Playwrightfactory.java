@@ -5,7 +5,11 @@ package openCart.factory;/*
 
 import com.microsoft.playwright.*;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Locale;
+import java.util.Properties;
 
 public class Playwrightfactory {
 
@@ -13,11 +17,11 @@ public class Playwrightfactory {
     Browser browser;
     BrowserContext browserContext;
     Page page;
-    public Page initBrowser(String browserName){
-        System.out.println("Browser name is "+browserName);
+    Properties prop;
+    public Page initBrowser(Properties properties){
         playwright = Playwright.create();
 
-        switch (browserName.toLowerCase()){
+        switch (properties.getProperty("browser").toLowerCase()){
             case "chromium" :
                 System.out.println("Launching chromium!!");
                 browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
@@ -38,8 +42,13 @@ public class Playwrightfactory {
         }
         browserContext = browser.newContext();
         page = browserContext.newPage();
-        System.out.println("browser context launches newpage and its "+page);
-        page.navigate("https://www.saucedemo.com/");
+        page.navigate(properties.getProperty("url"));
         return page;
+    }
+    public Properties initProp() throws IOException {
+        FileInputStream ip = new FileInputStream("/Users/pritipradhan/Documents/Practice_Automation_codes/PlayWright_Jul_2025/src/resources/config/config.properties");
+        prop = new Properties();
+        prop.load(ip);
+        return prop;
     }
 }

@@ -5,9 +5,9 @@
     <classes>
       <class name="testcases.HomePageTest">
         <methods>
-          <include name="searchItem" invocation-numbers="2"/>
-          <include name="setup"/>
           <include name="teardown"/>
+          <include name="setup"/>
+          <include name="searchItem" invocation-numbers="2"/>
         </methods>
       </class> <!-- testcases.HomePageTest -->
     </classes>

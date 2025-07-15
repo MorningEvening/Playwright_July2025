@@ -35,7 +35,6 @@ public class HomePage {
         page.locator(user_locator).fill("standard_user");
         page.locator(pass_locator).fill("secret_sauce");
         page.locator(login_locator).click();
-        //System.out.println("page content is "+page.content());
         String actual_tile = page.textContent(title);
         System.out.println("Title is "+actual_tile);
         return actual_tile;

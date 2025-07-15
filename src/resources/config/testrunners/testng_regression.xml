@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Open Cart Regression suite">
+    <test name="Verify Title and login URL  " >
+        <classes>
+            <class name="testcases.HomePageTest"/>
+            <!--parameter name="url" value="https://uat-lb-admin.sadhguru.org/login"></parameter>
+            <parameter name="" value=""></parameter-->
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Open Cart Regression suite">
+    <test name="Verify Title and login URL  " >
+        <classes>
+            <class name="testcases.HomePageTest"/>
+            <!--parameter name="url" value="https://uat-lb-admin.sadhguru.org/login"></parameter>
+            <parameter name="RitualName" value=""></parameter-->
+        </classes>
+    </test>
+    <!--    <test name="CopyRitual" >-->
+    <!--        <classes>-->
+    <!--            <class name="testcases.ReadRitual"/>-->
+    <!--            <parameter name="url" value="https://uat-lb-admin.sadhguru.org/login"></parameter>-->
+    <!--            <parameter name="RitualName" value="Devi Abhishekam"></parameter>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    <test name="Register" >-->
+    <!--        <classes>-->
+    <!--            <class name="testcases.RegsiterForRitualTest"/>-->
+    <!--            <parameter name="url" value="https://uat-arpanam.sadhguru.org/rituals"></parameter>-->
+    <!--            <parameter name="location" value="Salem"></parameter>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+</suite>
