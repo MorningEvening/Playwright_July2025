@@ -7,6 +7,7 @@ import com.microsoft.playwright.*;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.Properties;
 
 public class Playwrightfactory {
@@ -77,4 +78,12 @@ public class Playwrightfactory {
         prop.load(ip);
         return prop;
     }
+
+    public static String takeScreenshot(){
+        String path = System.getProperty("user.dir") + "/screenshot" + System.currentTimeMillis() + ".png";
+        getPage().screenshot(new Page.ScreenshotOptions()
+                .setPath(Paths.get(path))
+                .setFullPage(true));
+        return path;
+     }
 }
