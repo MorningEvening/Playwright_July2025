@@ -6,6 +6,7 @@ package testcases;/*
 import com.microsoft.playwright.Page;
 import openCart.factory.Playwrightfactory;
 import openCart.pages.HomePage;
+import openCart.pages.LoginPage;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
@@ -16,17 +17,16 @@ public class BaseTest {
 
     Playwrightfactory pf;
     Page page;
-    HomePage homePage;
-    Properties prop;
+    protected HomePage homePage;
+    protected LoginPage loginPage;
+    protected Properties prop;
 
     @BeforeTest
     public void setup() throws IOException {
-
         pf = new Playwrightfactory();
         prop = pf.initProp();
         page = pf.initBrowser(prop);
         homePage = new HomePage(page);
-        homePage.login();
     }
 
     @AfterTest

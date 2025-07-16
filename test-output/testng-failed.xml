@@ -7,7 +7,8 @@
         <methods>
           <include name="teardown"/>
           <include name="setup"/>
-          <include name="searchItem" invocation-numbers="2"/>
+          <include name="homePageTitle"/>
+          <include name="homePageURL"/>
         </methods>
       </class> <!-- testcases.HomePageTest -->
     </classes>

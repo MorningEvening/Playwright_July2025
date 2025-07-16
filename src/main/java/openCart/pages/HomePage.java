@@ -31,12 +31,10 @@ public class HomePage {
         return page.content().contains(tosearch);
     }
 
-    public String login(){
+    public LoginPage navigateTologinPage(){
         page.locator(user_locator).fill("standard_user");
         page.locator(pass_locator).fill("secret_sauce");
         page.locator(login_locator).click();
-        String actual_tile = page.textContent(title);
-        System.out.println("Title is "+actual_tile);
-        return actual_tile;
+        return new LoginPage(page);
     }
 }
