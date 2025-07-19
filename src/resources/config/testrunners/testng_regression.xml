@@ -6,11 +6,13 @@
         <listener class-name="openCart.listener.ExtentReportListener"></listener>
     </listeners>
     <test name="Verify Title and login URL  " >
+        <parameter name="browser" value="chromium"></parameter>
         <classes>
             <class name="testcases.HomePageTest"/>
           </classes>
     </test>
     <test name="Verify num of products">
+        <parameter name="browser" value="firefox"></parameter>
         <classes>
             <class name="testcases.LoginPageTest"></class>
         </classes>

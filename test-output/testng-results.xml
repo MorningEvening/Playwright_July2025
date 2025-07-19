@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-16T13:38:19 IST" name="Default Suite" finished-at="2025-07-16T13:38:23 IST" duration-ms="4097">
+  <suite started-at="2025-07-18T23:16:26 IST" name="Default Suite" finished-at="2025-07-18T23:16:30 IST" duration-ms="4028">
     <groups>
     </groups>
-    <test started-at="2025-07-16T13:38:19 IST" name="PlayWright_Jul_2025" finished-at="2025-07-16T13:38:23 IST" duration-ms="4097">
+    <test started-at="2025-07-18T23:16:26 IST" name="PlayWright_Jul_2025" finished-at="2025-07-18T23:16:30 IST" duration-ms="4028">
       <class name="testcases.HomePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.HomePageTest@3835c46]" started-at="2025-07-16T13:38:19 IST" name="setup" finished-at="2025-07-16T13:38:23 IST" duration-ms="3983" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.HomePageTest@31c88ec8]" started-at="2025-07-18T23:16:26 IST" name="setup" finished-at="2025-07-18T23:16:30 IST" duration-ms="3918" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="homePageTitle()[pri:0, instance:testcases.HomePageTest@3835c46]" started-at="2025-07-16T13:38:23 IST" name="homePageTitle" finished-at="2025-07-16T13:38:23 IST" duration-ms="6" status="PASS">
+        <test-method signature="homePageTitle()[pri:0, instance:testcases.HomePageTest@31c88ec8]" started-at="2025-07-18T23:16:30 IST" name="homePageTitle" finished-at="2025-07-18T23:16:30 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageTitle -->
-        <test-method signature="homePageURL()[pri:0, instance:testcases.HomePageTest@3835c46]" started-at="2025-07-16T13:38:23 IST" name="homePageURL" finished-at="2025-07-16T13:38:23 IST" duration-ms="0" status="PASS">
+        <test-method signature="homePageURL()[pri:0, instance:testcases.HomePageTest@31c88ec8]" started-at="2025-07-18T23:16:30 IST" name="homePageURL" finished-at="2025-07-18T23:16:30 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageURL -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.HomePageTest@3835c46]" started-at="2025-07-16T13:38:23 IST" name="teardown" finished-at="2025-07-16T13:38:23 IST" duration-ms="88" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.HomePageTest@31c88ec8]" started-at="2025-07-18T23:16:30 IST" name="teardown" finished-at="2025-07-18T23:16:30 IST" duration-ms="81" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

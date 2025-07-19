@@ -69,6 +69,7 @@ public class Playwrightfactory {
 
         //page.navigate(properties.getProperty("url"));
         getPage().navigate(prop.getProperty("url").trim());
+        System.out.println(System.getProperty("java.class.path"));
         //return page;
         return getPage();
     }
