@@ -23,9 +23,9 @@ public class BaseTest {
     protected LoginPage loginPage;
     protected Properties prop;
 
-    @Parameters({"browser"})
+    @Parameters("browser")
     @BeforeTest
-    public void setup( String browserName) throws IOException {
+    public void setup(@Optional("chromium") String browserName) throws IOException {
         pf = new Playwrightfactory();
         prop = pf.initProp();
         if(browserName!= null){

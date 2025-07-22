@@ -1,20 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 4.392 s <<< FAILURE! - in TestSuite
-homePageTitle(testcases.HomePageTest)  Time elapsed: 0.023 s  <<< FAILURE!
-java.lang.NullPointerException
-	at testcases.HomePageTest.homePageTitle(HomePageTest.java:16)
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 5, Time elapsed: 0.304 s <<< FAILURE! - in TestSuite
+setup(testcases.BaseTest)  Time elapsed: 0.144 s  <<< FAILURE!
+org.testng.TestNGException: 
 
-homePageURL(testcases.HomePageTest)  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.NullPointerException
-	at testcases.HomePageTest.homePageURL(HomePageTest.java:21)
+Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
 
-loginPageNavigationTest(testcases.LoginPageTest)  Time elapsed: 0 s  <<< FAILURE!
-java.lang.NullPointerException
-	at testcases.LoginPageTest.loginPageNavigationTest(LoginPageTest.java:13)
-
-verifyNumofProducts(testcases.LoginPageTest)  Time elapsed: 0.006 s  <<< FAILURE!
-java.lang.NullPointerException
-	at testcases.LoginPageTest.verifyNumofProducts(LoginPageTest.java:20)
 
