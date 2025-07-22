@@ -74,7 +74,7 @@ public class Playwrightfactory {
         return getPage();
     }
     public Properties initProp() throws IOException {
-        FileInputStream ip = new FileInputStream("/Users/pritipradhan/Documents/Practice_Automation_codes/PlayWright_Jul_2025/src/resources/config/config.properties");
+        FileInputStream ip = new FileInputStream(System.getProperty("user.dir") +"/src/resources/config/config.properties");
         prop = new Properties();
         prop.load(ip);
         return prop;
