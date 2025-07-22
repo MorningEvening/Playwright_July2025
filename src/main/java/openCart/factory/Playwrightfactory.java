@@ -43,20 +43,20 @@ public class Playwrightfactory {
             case "chromium" :
                 System.out.println("Launching chromium!!");
                 //browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
-                tlBrowser.set(playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false)));
+                tlBrowser.set(playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(true)));
                 break;
             case "safari" :
                 //browser = playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(false));
-                tlBrowser.set(playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(false)));
+                tlBrowser.set(playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(true)));
                 break;
             case "firefox" :
                 //browser = playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(false));
-                tlBrowser.set(playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(false)));
+                tlBrowser.set(playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(true)));
                 break;
             case "chrome" :
                 System.out.println("Launching chrome");
                 //browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setChannel("chrome").setHeadless(false));
-                tlBrowser.set(playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false)));
+                tlBrowser.set(playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(true)));
                 break;
             default:
                 System.out.println("Browsername not found!!");
@@ -69,7 +69,7 @@ public class Playwrightfactory {
 
         //page.navigate(properties.getProperty("url"));
         getPage().navigate(prop.getProperty("url").trim());
-        System.out.println(System.getProperty("java.class.path"));
+        //System.out.println(System.getProperty("java.class.path"));
         //return page;
         return getPage();
     }
