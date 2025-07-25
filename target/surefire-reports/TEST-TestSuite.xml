@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="0.304" tests="6" errors="0" skipped="5" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="6.882" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-11.0.10.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/pritipradhan/Documents/Practice_Automation_codes/PlayWright_Jul_2025/target/surefire/surefirebooter7342409588348150202.jar /Users/pritipradhan/Documents/Practice_Automation_codes/PlayWright_Jul_2025/target/surefire 2025-07-22T19-50-09_400-jvmRun1 surefire4469150695724481546tmp surefire_08279799124770176256tmp"/>
+    <property name="sun.java.command" value="/Users/pritipradhan/Documents/Practice_Automation_codes/PlayWright_Jul_2025/target/surefire/surefirebooter13577581112141515236.jar /Users/pritipradhan/Documents/Practice_Automation_codes/PlayWright_Jul_2025/target/surefire 2025-07-25T20-29-59_872-jvmRun1 surefire13238245918638762575tmp surefire_07241695729432794221tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/pritipradhan/Documents/Practice_Automation_codes/PlayWright_Jul_2025/target/test-classes:/Users/pritipradhan/Documents/Practice_Automation_codes/PlayWright_Jul_2025/target/classes:/Users/pritipradhan/.m2/repository/org/testng/testng/7.1.0/testng-7.1.0.jar:/Users/pritipradhan/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/pritipradhan/.m2/repository/com/google/inject/guice/4.1.0/guice-4.1.0-no_aop.jar:/Users/pritipradhan/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/pritipradhan/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/pritipradhan/.m2/repository/com/google/guava/guava/19.0/guava-19.0.jar:/Users/pritipradhan/.m2/repository/org/yaml/snakeyaml/1.21/snakeyaml-1.21.jar:/Users/pritipradhan/.m2/repository/com/microsoft/playwright/playwright/1.35.0/playwright-1.35.0.jar:/Users/pritipradhan/.m2/repository/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar:/Users/pritipradhan/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/pritipradhan/.m2/repository/com/microsoft/playwright/driver/1.35.0/driver-1.35.0.jar:/Users/pritipradhan/.m2/repository/com/microsoft/playwright/driver-bundle/1.35.0/driver-bundle-1.35.0.jar:/Users/pritipradhan/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar:/Users/pritipradhan/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/Users/pritipradhan/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/pritipradhan/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/Users/pritipradhan/.m2/repository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar:"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/pritipradhan/Documents/Practice_Automation_codes/PlayWright_Jul_2025/target/surefire/surefirebooter7342409588348150202.jar"/>
+    <property name="surefire.real.class.path" value="/Users/pritipradhan/Documents/Practice_Automation_codes/PlayWright_Jul_2025/target/surefire/surefirebooter13577581112141515236.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="11.0.10+8-LTS-162"/>
@@ -61,26 +61,8 @@
     <property name="java.class.version" value="55.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="setup" classname="testcases.BaseTest" time="0.144">
-    <failure message="&#10;Parameter &apos;browser&apos; is required by BeforeTest on method setup but has not been marked @Optional or defined&#10;" type="org.testng.TestNGException">org.testng.TestNGException: 
-
-Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
-
-</failure>
-  </testcase>
-  <testcase name="homePageTitle" classname="testcases.HomePageTest" time="0">
-    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeTest on method setup but has not been marked @Optional or defined&#10;"/>
-  </testcase>
-  <testcase name="homePageURL" classname="testcases.HomePageTest" time="0">
-    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeTest on method setup but has not been marked @Optional or defined&#10;"/>
-  </testcase>
-  <testcase name="loginPageNavigationTest" classname="testcases.LoginPageTest" time="0">
-    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeTest on method setup but has not been marked @Optional or defined&#10;"/>
-  </testcase>
-  <testcase name="verifyNumofProducts" classname="testcases.LoginPageTest" time="0">
-    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeTest on method setup but has not been marked @Optional or defined&#10;"/>
-  </testcase>
-  <testcase name="teardown" classname="testcases.BaseTest" time="0">
-    <skipped/>
-  </testcase>
+  <testcase name="homePageTitle" classname="testcases.HomePageTest" time="0.087"/>
+  <testcase name="homePageURL" classname="testcases.HomePageTest" time="0.002"/>
+  <testcase name="loginPageNavigationTest" classname="testcases.LoginPageTest" time="0.225"/>
+  <testcase name="verifyNumofProducts" classname="testcases.LoginPageTest" time="0.005"/>
 </testsuite>

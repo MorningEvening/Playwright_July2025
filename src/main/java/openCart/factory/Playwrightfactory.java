@@ -36,7 +36,7 @@ public class Playwrightfactory {
         return tlPage.get();
     }
 
-    public Page initBrowser(Properties properties){
+    public Page initBrowser(Properties properties) {
         //playwright = Playwright.create();
         String browserName = prop.getProperty("browser").trim();
         System.out.println("Browser name is "+browserName);
@@ -47,7 +47,7 @@ public class Playwrightfactory {
             case "chromium" :
                 System.out.println("Launching chromium!!");
                 //browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
-                tlBrowser.set(tlPlaywright.get().chromium().launch(new BrowserType.LaunchOptions().setHeadless(true)));
+                tlBrowser.set(tlPlaywright.get().chromium().launch(new BrowserType.LaunchOptions().setHeadless(false)));
                 break;
             case "safari" :
                 //browser = playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(false));
@@ -60,7 +60,7 @@ public class Playwrightfactory {
             case "chrome" :
                 System.out.println("Launching chrome");
                 //browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setChannel("chrome").setHeadless(false));
-                tlBrowser.set(tlPlaywright.get().chromium().launch(new BrowserType.LaunchOptions().setHeadless(true)));
+                tlBrowser.set(tlPlaywright.get().chromium().launch(new BrowserType.LaunchOptions().setHeadless(false)));
                 break;
             default:
                 System.out.println("Browsername not found!!");

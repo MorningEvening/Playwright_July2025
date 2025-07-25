@@ -81,7 +81,7 @@ public class ExtentReportListener implements ITestListener {
     @Override
     public void onTestSuccess(ITestResult result) {
         System.out.println(result.getMethod().getMethodName() + " passed");
-        test.get().pass("Test passed");
+        test.get().pass("Test passed under onTestSuccess listener");
         test.get().getModel().setEndTime(getTime(result.getEndMillis()));
     }
 

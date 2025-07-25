@@ -8,31 +8,17 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">0</td><td class="num attn">4</td><td class="num">0</td><td class="num">0</td><td class="num">28</td><td></td><td></td></tr>
+<tr><th colspan="8">Open Cart Regression suite</th></tr>
+<tr><td><a href="#t0">Verify Title and login URL  </a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">4,139</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Verify num of products</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">6,399</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">4</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">10,538</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">testcases.BaseTest</td><td><a href="#m0">setup</a></td><td rowspan="1">1753194009993</td><td rowspan="1">-1753194009993</td></tr><tr><th colspan="4">Surefire test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">testcases.BaseTest</td><td><a href="#m1">teardown</a></td><td rowspan="1">1753194010019</td><td rowspan="1">-1753194010019</td></tr><tr><th colspan="4">Surefire test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">testcases.HomePageTest</td><td><a href="#m2">homePageTitle</a></td><td rowspan="1">1753194010016</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m3">homePageURL</a></td><td rowspan="1">1753194010018</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="2">testcases.LoginPageTest</td><td><a href="#m4">loginPageNavigationTest</a></td><td rowspan="1">1753194010019</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m5">verifyNumofProducts</a></td><td rowspan="1">1753194010019</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Open Cart Regression suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Verify Title and login URL   &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">testcases.HomePageTest</td><td><a href="#m0">homePageTitle</a></td><td rowspan="1">1753455604364</td><td rowspan="1">84</td></tr><tr class="passedeven"><td><a href="#m1">homePageURL</a></td><td rowspan="1">1753455604457</td><td rowspan="1">2</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Verify num of products &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">testcases.LoginPageTest</td><td><a href="#m2">loginPageNavigationTest</a></td><td rowspan="1">1753455606254</td><td rowspan="1">231</td></tr><tr class="passedeven"><td><a href="#m3">verifyNumofProducts</a></td><td rowspan="1">1753455606486</td><td rowspan="1">5</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">testcases.BaseTest#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by BeforeTest on method setup but has not been marked @Optional or defined
-
-... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testcases.BaseTest#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testcases.HomePageTest#homePageTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by BeforeTest on method setup but has not been marked @Optional or defined
-
-... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testcases.HomePageTest#homePageURL</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by BeforeTest on method setup but has not been marked @Optional or defined
-
-... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">testcases.LoginPageTest#loginPageNavigationTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by BeforeTest on method setup but has not been marked @Optional or defined
-
-... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">testcases.LoginPageTest#verifyNumofProducts</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by BeforeTest on method setup but has not been marked @Optional or defined
-
-... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Verify Title and login URL  </h2><h3 id="m0">testcases.HomePageTest#homePageTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testcases.HomePageTest#homePageURL</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Verify num of products</h2><h3 id="m2">testcases.LoginPageTest#loginPageNavigationTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testcases.LoginPageTest#verifyNumofProducts</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
