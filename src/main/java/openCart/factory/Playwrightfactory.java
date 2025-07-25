@@ -47,7 +47,7 @@ public class Playwrightfactory {
             case "chromium" :
                 System.out.println("Launching chromium!!");
                 //browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
-                tlBrowser.set(tlPlaywright.get().chromium().launch(new BrowserType.LaunchOptions().setHeadless(false)));
+                tlBrowser.set(tlPlaywright.get().chromium().launch(new BrowserType.LaunchOptions().setHeadless(true)));
                 break;
             case "safari" :
                 //browser = playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(false));
@@ -60,7 +60,7 @@ public class Playwrightfactory {
             case "chrome" :
                 System.out.println("Launching chrome");
                 //browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setChannel("chrome").setHeadless(false));
-                tlBrowser.set(tlPlaywright.get().chromium().launch(new BrowserType.LaunchOptions().setHeadless(false)));
+                tlBrowser.set(tlPlaywright.get().chromium().launch(new BrowserType.LaunchOptions().setHeadless(true)));
                 break;
             default:
                 System.out.println("Browsername not found!!");
