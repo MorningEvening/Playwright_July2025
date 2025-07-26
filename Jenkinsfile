@@ -2,7 +2,7 @@ pipeline
 {
     agent any
     tools {
-        maven 'maven'
+        maven 'maven_3_8_1'
     }
 
     stages
@@ -45,7 +45,7 @@ pipeline
         {
             steps
             {
-                publishHTML ([allowmissing:false,
+                publishHTML ([allowMissing:false,
                 alwaysLinkToLastBuild:false,
                 keepAll:true,
                 reportDir: 'build',
